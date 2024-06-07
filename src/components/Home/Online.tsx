@@ -1,3 +1,4 @@
+"use client";
 import { Avatar, AvatarGroup } from "@mui/material";
 
 const listOnline = [
@@ -34,7 +35,16 @@ const listOnline = [
 const Online = () => {
   return (
     <div className="w-full p-4 bg-white rounded-xl shadow-lg">
-      <AvatarGroup max={9} total={18}>
+      <AvatarGroup
+        renderSurplus={(surplus) => <span className="text-[10px] flex justify-center items-center text-center">{surplus.toString()}<br />More</span>}
+        total={18}
+        max={9}
+        sx={{
+          "& .MuiAvatar-root": {
+            background: "linear-gradient(90deg, rgba(255,0,0,1) 35%, rgba(195,15,99,1) 100%)"
+          },
+        }}
+      >
         <Avatar alt="Remy Sharp" src="/profile.jpg" />
         <Avatar alt="Travis Howard" src="/profile.jpg" />
         <Avatar alt="Cindy Baker" src="/profile.jpg" />
