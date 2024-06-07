@@ -25,7 +25,7 @@ const CardProfile = () => {
       <div className="flex justify-between items-end mt-3">
         <div>
           <p className="text-xs font-light ">Location</p>
-          <p className="text-md font-semibold -mt-1">Kantor Sahid</p>
+          <p className="text-sm font-semibold -mt-1">Kantor Sahid</p>
         </div>
         <p className="text-md italic">ICO</p>
       </div>

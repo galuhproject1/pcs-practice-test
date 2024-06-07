@@ -1,5 +1,11 @@
+import MainLayout from "@/components/MainLayout";
+
 const settingsPage = () => {
-    return <div>Settings</div>;
+    return (
+        <MainLayout>
+            Settings
+        </MainLayout>
+    );
 }
 
 export default settingsPage

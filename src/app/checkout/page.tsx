@@ -1,5 +1,7 @@
+import MainLayout from "@/components/MainLayout";
+
 const checkoutPage = () => {
-    return <div>Checkout</div>;
+    return <MainLayout>Checkout</MainLayout>;
 }
 
 export default checkoutPage
